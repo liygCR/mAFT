@@ -6,14 +6,14 @@ Authors@R: c(person("Yaguang", "Li", role = c("aut", "cre"),
                      email = "liyg@mail.ustc.edu.cn"),
               person("Baisuo", "Jin", role = "aut"),
               person("Jialiang", "Li", role = "aut"))
-Author: Yaguang Li [aut, cre],
-        Baisuo Jin [aut],
-        Jialiang Li [aut]
+Author: Jialiang Li [aut], Baisuo Jin [aut], Yaguang Li [aut, cre]
 Maintainer: Yaguang Li <liyg@mail.ustc.edu.cn>
 Depends: R (>= 3.5.0), grpreg, plus, lars
-Suggests: MASS
+Suggests: MASS,
+    knitr,
+    rmarkdown
 Description: This package developed a two-stage procedure for simultaneously detecting multiple thresholds and achieving model selection in the segmented accelerate failure time (AFT) model. In the first stage, the threshold problem is formulated as a group model selection problem so that a concave 2-norm group selection method can be applied. In the second stage, the thresholds are finalized via a refining method.  
-License:  GPL (>= 2)
+License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.0
