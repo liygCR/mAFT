@@ -1,5 +1,5 @@
 # mAFT
-'mAFT' is an 'R' package for Multi-threshold Accelerate Failure Time Model
+`mAFT` is an `R` package for Multi-threshold Accelerate Failure Time Model
 
 ## Install this package
 ```r
