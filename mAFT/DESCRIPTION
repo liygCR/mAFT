@@ -8,7 +8,7 @@ Authors@R: c(person("Yaguang", "Li", role = c("aut", "cre"),
               person("Jialiang", "Li", role = "aut"))
 Author: Jialiang Li [aut], Baisuo Jin [aut], Yaguang Li [aut, cre]
 Maintainer: Yaguang Li <liyg@mail.ustc.edu.cn>
-Depends: R (>= 3.5.0), grpreg, plus, lars
+Depends: R (>= 3.5.0), grpreg, lars
 Suggests: MASS,
     knitr,
     rmarkdown
@@ -17,3 +17,4 @@ License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.0
+
