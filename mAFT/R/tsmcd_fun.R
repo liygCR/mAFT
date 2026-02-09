@@ -832,6 +832,7 @@ cumcp <- function(Y, X, delta) {
 #' \donttest{
 #' library(grpreg)
 #' # Generate simulated data with 500 samples and normal error distribution
+#' n = 500          
 #' dataset <- MTAFT_simdata(n = 500, err = "normal")
 #' Y <- dataset[, 1]
 #' delta <- dataset[, 2]
@@ -1150,6 +1151,7 @@ TSMCP_AFT <- function(Y, X, delta, c,penalty = "scad") {
   return(list(cp = mcpcss.cp, coef = mcp.coef, sigma = sigmaep, residuals = ep,
               Yn = Yn, Xn = Xn))
 }
+
 
 
 
