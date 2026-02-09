@@ -844,7 +844,7 @@ cumcp <- function(Y, X, delta) {
 #' tsmc=NULL
 #' p = ncol(X)
 #' for(i in 1:length(c)){
-#'     tsm=try(TSMCP(Y,X,delta,c[i],penalty = "scad"),silent=TRUE)
+#'     tsm=try(TSMCP_AFT(Y,X,delta,c[i],penalty = "scad"),silent=TRUE)
 #'     if(is(tsm,"try-error")) next()
 #'     bicy[i]=log(n)*((length(tsm[[1]])+1)*(p+1))+n*log(tsm[[3]])
 #'     tsmc[[i]]=tsm
@@ -858,7 +858,7 @@ cumcp <- function(Y, X, delta) {
 #'     thre.num.Lj
 #' }
 #' }
-TSMCP <- function(Y, X, delta, c,penalty = "scad") {
+TSMCP_AFT <- function(Y, X, delta, c,penalty = "scad") {
   
   n <- length(Y)
   X <- as.matrix(X)
@@ -1150,6 +1150,7 @@ TSMCP <- function(Y, X, delta, c,penalty = "scad") {
   return(list(cp = mcpcss.cp, coef = mcp.coef, sigma = sigmaep, residuals = ep,
               Yn = Yn, Xn = Xn))
 }
+
 
 
 
