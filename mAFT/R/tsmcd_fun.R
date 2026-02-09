@@ -796,7 +796,7 @@ cumcp <- function(Y, X, delta) {
 }
 
 
-#' TSMCP: Two stage multiple change points detection for AFT model.
+#' TSMCP_AFT: Two stage multiple change points detection for AFT model.
 #'
 #' This function first formulates the threshold problem as a group model selection problem
 #' so that a concave 2-norm group selection method can be applied using the `grpreg`
@@ -1151,6 +1151,7 @@ TSMCP_AFT <- function(Y, X, delta, c,penalty = "scad") {
   return(list(cp = mcpcss.cp, coef = mcp.coef, sigma = sigmaep, residuals = ep,
               Yn = Yn, Xn = Xn))
 }
+
 
 
 
